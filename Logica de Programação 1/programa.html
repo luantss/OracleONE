@@ -4,15 +4,30 @@
 <script>
     // Necessario para o navegador reconhecer o javascript
 
+    // Criação de variável
+    var ano = 2022;
+
     // Escrever em um documento
-    document.write("Luan nasceu em " + (2000 + 3) + "<br>");
-    document.write("Lara nasceu em " + (1900 + 98) + "<br>");
-    document.write("Mara nasceu em " + (1900 + 72) + "<br>");
+    document.write("Luan tem " + (ano - 2003) + " anos<br>");
+    document.write("Lara tem " + (ano - 1998) + " anos<br>");
+    document.write("Mara tem " + (ano - 1972) + " anos<br>");
     // Exemplo de concatenação
 
     //document.write("18" + 20);
     // Quando se tem string e numero concatenado, o js converte tudo para string
 
-    document.write();
+    //Criação de variáveis para ficar mais simples a leitura do código
+    var idadeLuan = 18;
+    var idadeLara = 24;
+    var idadeMara = 50;
+
+    var media = (idadeLuan + idadeLara + idadeMara)/3;
+
+    //Math.round arredondando o valor da média
+    document.write("<br>A média das idades é " + Math.round(media));
+
+    var nome = "Luan";
+
+    document.write("<br>A idade de " + nome + " é " + idadeLuan);
 
 </script>
