@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anosPassados = 2022 - 1500;
+    var geracoes = anosPassados / 28;
+
+    mostra("Já se passaram " + anosPassados+ " anos desde 1500!");
+    
+    mostra("Nesse período tiveram " + Math.round(geracoes) + " gerações de famílias");
+
+</script>

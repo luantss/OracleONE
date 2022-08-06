@@ -4,13 +4,29 @@
 <script>
     // Necessario para o navegador reconhecer o javascript
 
+    //Criação da função que indica uma ação que será gerada
+    //Função torna mais legivel oq é feito dentro do código
+    //Pode ser um conjunto de instruções reutilizada no código
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
     // Criação de variável
     var ano = 2022;
 
     // Escrever em um documento
-    document.write("Luan tem " + (ano - 2003) + " anos<br>");
-    document.write("Lara tem " + (ano - 1998) + " anos<br>");
-    document.write("Mara tem " + (ano - 1972) + " anos<br>");
+
+    mostra("Luan tem " + (ano - 2003) + " anos");
+
+    mostra("Lara tem " + (ano - 1998) + " anos");
+
+    mostra("Mara tem " + (ano - 1972) + " anos");
+
     // Exemplo de concatenação
 
     //document.write("18" + 20);
@@ -24,10 +40,10 @@
     var media = (idadeLuan + idadeLara + idadeMara)/3;
 
     //Math.round arredondando o valor da média
-    document.write("<br>A média das idades é " + Math.round(media));
+    mostra("A média das idades é " + Math.round(media));
 
     var nome = "Luan";
 
-    document.write("<br>A idade de " + nome + " é " + idadeLuan);
+    mostra("A idade de " + nome + " é " + idadeLuan);
 
 </script>
