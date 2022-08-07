@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<h2>Números entre 30 a 40, exceto 33 e 37!</h2>
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var num = 30;
+
+    while(num >= 30 && num <= 40) {
+
+        if(num == 33 || num == 37) {
+
+            num = num + 1;
+        } else {
+
+            mostra(num);
+            num = num + 1;
+        }
+    }
+
+    mostra("FIM!")
+
+</script>
